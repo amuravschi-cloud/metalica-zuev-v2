@@ -3,7 +3,7 @@ import { Building2, ShieldCheck, Award, TrendingUp, Phone, MessageSquare } from 
 
 export default function CompanyOverview() {
   return (
-    <section className="section" id="company" style={{ background: '#F4F7F5' }}>
+    <section className="section" id="company" style={{ background: '#040705' }}>
       <div className="container">
         <div className="company-card">
           <div className="company-text">
@@ -27,28 +27,28 @@ export default function CompanyOverview() {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            <div style={{ background: '#F4F7F5', border: '1px solid var(--border-green)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
-              <Building2 size={32} color="var(--brand-green)" style={{ marginBottom: '12px' }} />
-              <strong style={{ display: 'block', fontSize: '28px', color: 'var(--bg-dark-green)', fontWeight: '800' }}>3 + 1</strong>
-              <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Металлобазы и Лог-хаб</span>
+            <div style={{ background: 'var(--bg-surface-dark)', border: '1px solid var(--border-chrome)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
+              <Building2 size={32} color="#34D399" style={{ marginBottom: '12px' }} />
+              <strong style={{ display: 'block', fontSize: '28px', color: '#FFFFFF', fontWeight: '800' }}>3 + 1</strong>
+              <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Металлобазы и Лог-хаб</span>
             </div>
 
-            <div style={{ background: '#F4F7F5', border: '1px solid var(--border-green)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
-              <ShieldCheck size={32} color="var(--brand-green)" style={{ marginBottom: '12px' }} />
-              <strong style={{ display: 'block', fontSize: '28px', color: 'var(--bg-dark-green)', fontWeight: '800' }}>100%</strong>
-              <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>ГОСТ / EN сертификация</span>
+            <div style={{ background: 'var(--bg-surface-dark)', border: '1px solid var(--border-chrome)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
+              <ShieldCheck size={32} color="#34D399" style={{ marginBottom: '12px' }} />
+              <strong style={{ display: 'block', fontSize: '28px', color: '#FFFFFF', fontWeight: '800' }}>100%</strong>
+              <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>ГОСТ / EN сертификация</span>
             </div>
 
-            <div style={{ background: '#F4F7F5', border: '1px solid var(--border-green)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
-              <Award size={32} color="var(--brand-green)" style={{ marginBottom: '12px' }} />
-              <strong style={{ display: 'block', fontSize: '28px', color: 'var(--bg-dark-green)', fontWeight: '800' }}>30+ лет</strong>
-              <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>На рынке Молдовы</span>
+            <div style={{ background: 'var(--bg-surface-dark)', border: '1px solid var(--border-chrome)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
+              <Award size={32} color="#34D399" style={{ marginBottom: '12px' }} />
+              <strong style={{ display: 'block', fontSize: '28px', color: '#FFFFFF', fontWeight: '800' }}>30+ лет</strong>
+              <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>На рынке Молдовы</span>
             </div>
 
-            <div style={{ background: '#F4F7F5', border: '1px solid var(--border-green)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
-              <TrendingUp size={32} color="var(--brand-green)" style={{ marginBottom: '12px' }} />
-              <strong style={{ display: 'block', fontSize: '28px', color: 'var(--bg-dark-green)', fontWeight: '800' }}>450+</strong>
-              <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Позиций всегда в наличии</span>
+            <div style={{ background: 'var(--bg-surface-dark)', border: '1px solid var(--border-chrome)', borderRadius: 'var(--radius-md)', padding: '24px', textAlign: 'center' }}>
+              <TrendingUp size={32} color="#34D399" style={{ marginBottom: '12px' }} />
+              <strong style={{ display: 'block', fontSize: '28px', color: '#FFFFFF', fontWeight: '800' }}>450+</strong>
+              <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Позиций всегда в наличии</span>
             </div>
           </div>
         </div>

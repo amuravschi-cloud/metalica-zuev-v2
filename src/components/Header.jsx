@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Bar */}
+      {/* Top Announcement Bar */}
       <div className="top-announcement">
         <div className="container top-announcement-inner">
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
@@ -19,18 +19,18 @@ export default function Header() {
                 Базы открыты · Отгрузка металла
               </span>
             ) : (
-              <span className="status-badge" style={{ background: 'rgba(245, 158, 11, 0.15)', color: '#FBBF24' }}>
+              <span className="status-badge" style={{ background: 'rgba(245, 158, 11, 0.12)', color: '#FBBF24', borderColor: 'rgba(245, 158, 11, 0.3)' }}>
                 <span className="status-dot" style={{ backgroundColor: '#F59E0B', boxShadow: '0 0 8px #F59E0B' }}></span>
                 Приём сообщений 24/7 · Отгрузка: Пн–Пт 08:00–17:00
               </span>
             )}
 
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Clock size={14} color="#A3D9C9" /> Пн–Пт · 08:00–17:00
+              <Clock size={14} color="#34D399" /> Пн–Пт · 08:00–17:00
             </span>
 
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <MapPin size={14} color="#A3D9C9" /> 3 Базы + Хаб в Молдове
+              <MapPin size={14} color="#34D399" /> 3 Базы + Хаб в Молдове
             </span>
           </div>
 
@@ -51,7 +51,7 @@ export default function Header() {
           <a href="#top" className="brand-logo">
             <div className="brand-icon">MZ</div>
             <div className="brand-text">
-              <b>METALICA ZUEV</b>
+              <b>METALICA ZUEV v2</b>
               <small>Металлопрокат и комплексные поставки</small>
             </div>
           </a>

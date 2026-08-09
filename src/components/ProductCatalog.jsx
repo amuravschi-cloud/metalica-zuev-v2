@@ -143,16 +143,16 @@ export default function ProductCatalog() {
             Каждая партия сопровождена сертификатами завода-изготовителя.
           </p>
 
-          {/* Display Mode Toggle (Cards vs Table) */}
-          <div style={{ display: 'inline-flex', background: '#E6F2ED', padding: '4px', borderRadius: 'var(--radius-full)', marginTop: '20px' }}>
+          {/* Display Mode Toggle */}
+          <div style={{ display: 'inline-flex', background: 'var(--bg-surface-dark)', border: '1px solid var(--border-chrome)', padding: '4px', borderRadius: 'var(--radius-full)', marginTop: '20px' }}>
             <button 
               onClick={() => setDisplayMode('cards')}
               style={{
                 padding: '8px 20px',
                 borderRadius: 'var(--radius-full)',
                 border: 'none',
-                background: displayMode === 'cards' ? '#0E3B2C' : 'transparent',
-                color: displayMode === 'cards' ? '#FFFFFF' : '#486358',
+                background: displayMode === 'cards' ? 'var(--emerald-primary)' : 'transparent',
+                color: displayMode === 'cards' ? '#FFFFFF' : 'var(--text-secondary)',
                 fontSize: '13px',
                 fontWeight: '700',
                 cursor: 'pointer',
@@ -170,8 +170,8 @@ export default function ProductCatalog() {
                 padding: '8px 20px',
                 borderRadius: 'var(--radius-full)',
                 border: 'none',
-                background: displayMode === 'table' ? '#0E3B2C' : 'transparent',
-                color: displayMode === 'table' ? '#FFFFFF' : '#486358',
+                background: displayMode === 'table' ? 'var(--emerald-primary)' : 'transparent',
+                color: displayMode === 'table' ? '#FFFFFF' : 'var(--text-secondary)',
                 fontSize: '13px',
                 fontWeight: '700',
                 cursor: 'pointer',
@@ -203,20 +203,20 @@ export default function ProductCatalog() {
               <div key={prod.id} className="product-card-text">
                 <div className="product-card-text-header">
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                    <span style={{ fontSize: '11px', fontWeight: '800', letterSpacing: '0.08em', color: '#A3D9C9', textTransform: 'uppercase' }}>
+                    <span style={{ fontSize: '11px', fontWeight: '800', letterSpacing: '0.08em', color: '#34D399', textTransform: 'uppercase' }}>
                       Позиция {prod.code}
                     </span>
-                    <span style={{ background: 'rgba(255,255,255,0.12)', color: '#FFFFFF', padding: '3px 10px', borderRadius: 'var(--radius-sm)', fontSize: '11px', fontWeight: '800' }}>
+                    <span style={{ background: 'rgba(255,255,255,0.1)', color: '#FFFFFF', padding: '3px 10px', borderRadius: 'var(--radius-sm)', fontSize: '11px', fontWeight: '800', border: '1px solid var(--border-chrome)' }}>
                       {prod.tag}
                     </span>
                   </div>
 
                   <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#FFFFFF', lineHeight: '1.2' }}>{prod.title}</h3>
-                  <p style={{ fontSize: '12px', fontWeight: '700', color: '#4ADE80', marginTop: '4px' }}>{prod.subtitle}</p>
+                  <p style={{ fontSize: '12px', fontWeight: '700', color: '#34D399', marginTop: '4px' }}>{prod.subtitle}</p>
                 </div>
 
                 <div className="product-card-text-body">
-                  <p style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: '1.55', marginBottom: '18px' }}>
+                  <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: '1.55', marginBottom: '18px' }}>
                     {prod.desc}
                   </p>
 
@@ -229,7 +229,7 @@ export default function ProductCatalog() {
                     ))}
                   </div>
 
-                  <div style={{ marginTop: 'auto', paddingTop: '16px', borderTop: '1px solid var(--border-green)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                  <div style={{ marginTop: 'auto', paddingTop: '16px', borderTop: '1px solid var(--border-chrome)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
                     <a href="tel:+37368471530" className="btn btn-brand" style={{ padding: '10px', fontSize: '12px' }}>
                       <Phone size={14} /> Позвонить
                     </a>
@@ -243,11 +243,11 @@ export default function ProductCatalog() {
           </div>
         ) : (
           /* MODE 2: EXECUTIVE DATA TABLE */
-          <div style={{ background: '#FFFFFF', border: '1px solid var(--border-green)', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
+          <div style={{ background: 'var(--bg-card-dark)', border: '1px solid var(--border-chrome)', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-dark-lg)' }}>
             <div style={{ overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '14px' }}>
                 <thead>
-                  <tr style={{ background: 'var(--bg-dark-green)', color: '#FFFFFF', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  <tr style={{ background: '#030604', color: '#FFFFFF', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.05em', borderBottom: '1px solid var(--border-chrome)' }}>
                     <th style={{ padding: '16px 20px' }}>№</th>
                     <th style={{ padding: '16px 20px' }}>Наименование проката</th>
                     <th style={{ padding: '16px 20px' }}>Доступные сечения / Диаметры</th>
@@ -258,21 +258,21 @@ export default function ProductCatalog() {
                 </thead>
                 <tbody>
                   {filteredProducts.map((prod, idx) => (
-                    <tr key={prod.id} style={{ borderBottom: '1px solid var(--border-green)', background: idx % 2 === 0 ? '#FFFFFF' : '#F4F7F5' }}>
-                      <td style={{ padding: '16px 20px', fontWeight: '800', color: 'var(--brand-green)' }}>{prod.code}</td>
+                    <tr key={prod.id} style={{ borderBottom: '1px solid var(--border-chrome)', background: idx % 2 === 0 ? 'var(--bg-card-dark)' : 'var(--bg-surface-dark)' }}>
+                      <td style={{ padding: '16px 20px', fontWeight: '800', color: '#34D399' }}>{prod.code}</td>
                       <td style={{ padding: '16px 20px' }}>
-                        <strong style={{ display: 'block', color: 'var(--bg-dark-green)', fontSize: '15px' }}>{prod.title}</strong>
-                        <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>{prod.subtitle}</span>
+                        <strong style={{ display: 'block', color: '#FFFFFF', fontSize: '15px' }}>{prod.title}</strong>
+                        <span style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>{prod.subtitle}</span>
                       </td>
-                      <td style={{ padding: '16px 20px', fontWeight: '700', color: 'var(--text-dark)' }}>
+                      <td style={{ padding: '16px 20px', fontWeight: '700', color: '#FFFFFF' }}>
                         {prod.specs[1]?.value || 'По запросу'}
                       </td>
-                      <td style={{ padding: '16px 20px', fontSize: '13px', color: 'var(--text-muted)' }}>
-                        <span style={{ background: 'var(--brand-green-light)', color: 'var(--brand-green)', padding: '2px 8px', borderRadius: 'var(--radius-sm)', fontWeight: '700' }}>
+                      <td style={{ padding: '16px 20px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+                        <span style={{ background: 'rgba(16, 185, 129, 0.12)', color: '#34D399', padding: '2px 8px', borderRadius: 'var(--radius-sm)', fontWeight: '700', border: '1px solid var(--border-emerald)' }}>
                           {prod.tag}
                         </span>
                       </td>
-                      <td style={{ padding: '16px 20px', fontSize: '13px', fontWeight: '700', color: 'var(--text-dark)' }}>
+                      <td style={{ padding: '16px 20px', fontSize: '13px', fontWeight: '700', color: '#FFFFFF' }}>
                         {prod.specs[0]?.value || 'Ст3сп / А500С'}
                       </td>
                       <td style={{ padding: '16px 20px', textAlign: 'right' }}>

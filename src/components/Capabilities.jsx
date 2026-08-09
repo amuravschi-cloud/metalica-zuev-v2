@@ -26,7 +26,7 @@ export default function Capabilities() {
   ];
 
   return (
-    <section className="section" id="capabilities" style={{ background: '#FFFFFF' }}>
+    <section className="section" id="capabilities" style={{ background: 'var(--bg-obsidian)' }}>
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Сервис & Логистика</span>
@@ -46,35 +46,35 @@ export default function Capabilities() {
           ))}
         </div>
 
-        <div style={{ marginTop: '50px', background: '#F4F7F5', border: '1px solid var(--border-green)', borderRadius: 'var(--radius-lg)', padding: '36px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center' }}>
+        <div style={{ marginTop: '50px', background: 'var(--bg-card-dark)', border: '1px solid var(--border-chrome)', borderRadius: 'var(--radius-lg)', padding: '40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center', boxShadow: 'var(--shadow-dark-lg)' }}>
           <div>
-            <span style={{ fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', color: 'var(--brand-green)', letterSpacing: '0.05em' }}>
+            <span style={{ fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', color: '#34D399', letterSpacing: '0.05em' }}>
               Гарантия надежности
             </span>
-            <h3 style={{ fontSize: '26px', fontWeight: '800', margin: '8px 0 14px 0', color: 'var(--bg-dark-green)' }}>
+            <h3 style={{ fontSize: '28px', fontWeight: '800', margin: '8px 0 16px 0', color: '#FFFFFF' }}>
               Почему крупные застройщики Молдовы выбирают Metalica Zuev?
             </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '14px', fontWeight: '600', color: 'var(--text-dark)' }}>
-                <CheckCircle2 size={18} color="#16A34A" style={{ flexShrink: 0, marginTop: '2px' }} /> 
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', fontSize: '15px', fontWeight: '600', color: '#FFFFFF' }}>
+                <CheckCircle2 size={20} color="#10B981" style={{ flexShrink: 0, marginTop: '2px' }} /> 
                 <span>100% сертификация металлопроката заводскими паспортами</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '14px', fontWeight: '600', color: 'var(--text-dark)' }}>
-                <CheckCircle2 size={18} color="#16A34A" style={{ flexShrink: 0, marginTop: '2px' }} /> 
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', fontSize: '15px', fontWeight: '600', color: '#FFFFFF' }}>
+                <CheckCircle2 size={20} color="#10B981" style={{ flexShrink: 0, marginTop: '2px' }} /> 
                 <span>Открытое складское хранение проката на специализированных стеллажах и подкладках</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '14px', fontWeight: '600', color: 'var(--text-dark)' }}>
-                <CheckCircle2 size={18} color="#16A34A" style={{ flexShrink: 0, marginTop: '2px' }} /> 
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', fontSize: '15px', fontWeight: '600', color: '#FFFFFF' }}>
+                <CheckCircle2 size={20} color="#10B981" style={{ flexShrink: 0, marginTop: '2px' }} /> 
                 <span>Точный весовой контроль партии непосредственно при погрузке и разгрузке</span>
               </div>
             </div>
           </div>
 
-          <div style={{ background: '#FFFFFF', padding: '28px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-green)', boxShadow: 'var(--shadow-sm)' }}>
-            <h4 style={{ fontSize: '18px', fontWeight: '800', color: 'var(--bg-dark-green)', marginBottom: '8px' }}>
+          <div style={{ background: 'var(--bg-surface-dark)', padding: '32px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-chrome)' }}>
+            <h4 style={{ fontSize: '20px', fontWeight: '800', color: '#FFFFFF', marginBottom: '8px' }}>
               Обсудить поставку с отделом продаж
             </h4>
-            <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '14px', color: 'var(--text-secondary)', marginBottom: '24px' }}>
               Менеджер проконсультирует по ассортименту, проверит наличие и организует отгрузку.
             </p>
 
